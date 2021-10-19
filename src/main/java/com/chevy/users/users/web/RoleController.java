@@ -17,6 +17,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+
+/**
+ * Solo son comentarios de prueba
+ */
 @RestController
 @RequestMapping("/api/role")
 public class RoleController {
