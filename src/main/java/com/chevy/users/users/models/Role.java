@@ -13,12 +13,12 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
 @Entity
-@Table(name="actions")
-public class Action {
-    
-    @GeneratedValue(generator="uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+@Table(name = "roles")
+public class Role {
+
     @Id
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name ="uuid2", strategy = "uuid2")
     private String id;
 
     private String description;
@@ -32,29 +32,25 @@ public class Action {
     @LastModifiedDate
     @Column(name="update_date")
     private ZonedDateTime updateDate;
-    
+
+    public String getId() {
+        return this.id;
+    }
+
     public void setId(String id) {
         this.id = id;
     }
 
-    public String getId() {
-        return id;
-    }
-
     public String getDescription() {
-        return description;
+        return this.description;
     }
 
     public void setDescription(String description) {
         this.description = description;
     }
 
-    public void setInsertDate(ZonedDateTime insertDate) {
-        this.insertDate = insertDate;
-    }
-
     public String getStatus() {
-        return status;
+        return this.status;
     }
 
     public void setStatus(String status) {
@@ -62,14 +58,21 @@ public class Action {
     }
 
     public ZonedDateTime getInsertDate() {
-        return insertDate;
+        return this.insertDate;
+    }
+
+    public void setInsertDate(ZonedDateTime insertDate) {
+        this.insertDate = insertDate;
     }
 
     public ZonedDateTime getUpdateDate() {
-        return updateDate;
+        return this.updateDate;
     }
 
     public void setUpdateDate(ZonedDateTime updateDate) {
         this.updateDate = updateDate;
     }
+
+    
+    
 }
