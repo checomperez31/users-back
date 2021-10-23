@@ -1,10 +1,12 @@
 package com.chevy.users.users.models.relationships;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
-public class RoleActionsPK {
+public class RoleActionsPK implements Serializable {
 
     @Column(name="role_id")
     private String roleId;

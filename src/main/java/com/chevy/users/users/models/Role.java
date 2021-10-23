@@ -26,8 +26,8 @@ public class Role {
     private String status = "A";
 
     @CreatedDate
-    @Column(name="insert_date")
-    private ZonedDateTime insertDate;
+    @Column(name="insert_date", insertable = true, updatable = false)
+    private ZonedDateTime insertDate = ZonedDateTime.now();
     
     @LastModifiedDate
     @Column(name="update_date")
