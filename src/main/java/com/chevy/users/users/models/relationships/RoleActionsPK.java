@@ -14,6 +14,12 @@ public class RoleActionsPK implements Serializable {
     @Column(name="action_id")
     private String actionId;
 
+    public RoleActionsPK() {}
+
+    public RoleActionsPK(String roleId, String actionId) {
+        this.roleId = roleId;
+        this.actionId = actionId;
+    }
 
     public String getRoleId() {
         return this.roleId;
