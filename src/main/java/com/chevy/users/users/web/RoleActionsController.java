@@ -30,9 +30,9 @@ public class RoleActionsController {
         return ResponseEntity.ok().body( this.service.save(entity) );
     }
 
-    @GetMapping()
-    public ResponseEntity<List<RoleActions>> getEntities(Pageable pageable) {
-        List<RoleActions> page = this.service.findAll( pageable ).getContent();
+    @GetMapping("/{roleId}")
+    public ResponseEntity<List<RoleActions>> getEntities(@PathVariable String roleId, Pageable pageable) {
+        List<RoleActions> page = this.service.findAll( roleId, pageable ).getContent();
         return ResponseEntity.ok().body( page );
     }
 

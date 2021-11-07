@@ -25,8 +25,8 @@ public class RoleActionsService {
     }
 
     @Transactional(readOnly = false)
-    public Page<RoleActions> findAll(Pageable pageable) {
-        return this.repository.findAll(pageable);
+    public Page<RoleActions> findAll(String roleId, Pageable pageable) {
+        return this.repository.findAllById_RoleId(roleId, pageable);
     }
 
     @Transactional(readOnly = false)
