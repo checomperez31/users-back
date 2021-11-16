@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.chevy.users.users.models.relationships.RoleActions;
 import com.chevy.users.users.service.RoleActionsService;
+import com.chevy.users.users.service.dto.RoleActionModels;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
@@ -25,8 +27,13 @@ public class RoleActionsController {
         this.service = service;
     }
 
+    @PostMapping("/list")
+    public ResponseEntity<RoleActionModels> createList(@RequestBody RoleActionModels entities) {
+        return ResponseEntity.ok().body( this.service.saveList( entities ) );
+    }
+
     @PostMapping()
-    public ResponseEntity<RoleActions> create(RoleActions entity) {
+    public ResponseEntity<RoleActions> create(@RequestBody RoleActions entity) {
         return ResponseEntity.ok().body( this.service.save(entity) );
     }
 

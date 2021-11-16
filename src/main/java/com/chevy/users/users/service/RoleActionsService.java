@@ -5,6 +5,7 @@ import java.util.Optional;
 import com.chevy.users.users.models.relationships.RoleActions;
 import com.chevy.users.users.models.relationships.RoleActionsPK;
 import com.chevy.users.users.repositories.RoleActionsRepository;
+import com.chevy.users.users.service.dto.RoleActionModels;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -17,6 +18,16 @@ public class RoleActionsService {
 
     public RoleActionsService(RoleActionsRepository repository) {
         this.repository = repository;
+    }
+
+    @Transactional()
+    public RoleActionModels saveList(RoleActionModels entities) {
+        if ( entities != null && entities.getEntities() != null && entities.getEntities().size() > 0) {
+            for(RoleActions entity: entities.getEntities()) {
+                this.save( entity );
+            }
+        }
+        return entities;
     }
 
     @Transactional
