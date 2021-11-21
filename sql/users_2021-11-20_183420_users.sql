@@ -11,3 +11,9 @@ CREATE TABLE `users` (
   `last_name` varchar(400) DEFAULT NULL COMMENT 'User last name',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ALTER TABLE
+        users 
+    ADD 
+        COLUMN status VARCHAR(1) default 'A' NOT NULL comment 'user status';

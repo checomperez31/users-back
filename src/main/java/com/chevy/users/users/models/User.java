@@ -26,6 +26,7 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
+    private String status = "A";
 
     public String getId() {
         return this.id;
@@ -65,6 +66,14 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
 }
