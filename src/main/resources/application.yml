@@ -1,5 +1,18 @@
 spring:
+    application:
+        name: users
     profiles:
         active: @spring.profiles.active@
 server:
-    port: 8081
+    port: ${PORT:0}
+
+eureka:
+    instance:
+        instance-id: ${spring.application.name}:${spring.application.instance_id:${random.vakue}}
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+
+logging:
+    level:
+        org.hibernate.SQL: debug
