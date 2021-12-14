@@ -1,6 +1,6 @@
 package com.chevy.users.users.repositories;
 
-import com.chevy.users.users.models.User;
+import com.chevyl.commons.users.models.User;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

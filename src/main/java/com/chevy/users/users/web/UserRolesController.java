@@ -2,11 +2,9 @@ package com.chevy.users.users.web;
 
 import java.util.List;
 
-import javax.ws.rs.core.Response;
-
-import com.chevy.users.users.models.relationships.UserRoles;
 import com.chevy.users.users.service.UserRolesService;
 import com.chevy.users.users.service.dto.UserRolesModels;
+import com.chevyl.commons.users.models.relationships.UserRoles;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;

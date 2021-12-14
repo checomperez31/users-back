@@ -2,8 +2,8 @@ package com.chevy.users.users.service;
 
 import java.util.Optional;
 
-import com.chevy.users.users.models.relationships.UserRoles;
-import com.chevy.users.users.models.relationships.UserRolesPK;
+import com.chevyl.commons.users.models.relationships.UserRoles;
+import com.chevyl.commons.users.models.relationships.UserRolesPK;
 import com.chevy.users.users.repositories.UserRolesRepository;
 import com.chevy.users.users.service.dto.UserRolesModels;
 

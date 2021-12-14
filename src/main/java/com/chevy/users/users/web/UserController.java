@@ -2,7 +2,7 @@ package com.chevy.users.users.web;
 
 import java.util.List;
 
-import com.chevy.users.users.models.User;
+import com.chevyl.commons.users.models.User;
 import com.chevy.users.users.service.UserService;
 
 import org.springframework.http.ResponseEntity;

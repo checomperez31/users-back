@@ -3,7 +3,7 @@ package com.chevy.users.users.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.chevy.users.users.models.Action;
+import com.chevyl.commons.users.models.Action;
 import com.chevy.users.users.repositories.ActionRepository;
 
 import org.springframework.http.HttpStatus;

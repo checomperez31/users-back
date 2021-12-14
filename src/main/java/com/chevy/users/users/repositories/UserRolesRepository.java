@@ -1,9 +1,8 @@
 package com.chevy.users.users.repositories;
 
-import java.util.List;
+import com.chevyl.commons.users.models.relationships.UserRoles;
+import com.chevyl.commons.users.models.relationships.UserRolesPK;
 
-import com.chevy.users.users.models.relationships.UserRoles;
-import com.chevy.users.users.models.relationships.UserRolesPK;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

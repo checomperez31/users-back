@@ -2,7 +2,7 @@ package com.chevy.users.users.web;
 
 import java.util.List;
 
-import com.chevy.users.users.models.Role;
+import com.chevyl.commons.users.models.Role;
 import com.chevy.users.users.service.RoleService;
 
 import org.springframework.http.HttpStatus;

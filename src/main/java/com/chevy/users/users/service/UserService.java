@@ -3,7 +3,7 @@ package com.chevy.users.users.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.chevy.users.users.models.User;
+import com.chevyl.commons.users.models.User;
 import com.chevy.users.users.repositories.UserRepository;
 
 import org.springframework.stereotype.Service;

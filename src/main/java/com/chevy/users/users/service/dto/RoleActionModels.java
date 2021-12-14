@@ -2,7 +2,7 @@ package com.chevy.users.users.service.dto;
 
 import java.util.List;
 
-import com.chevy.users.users.models.relationships.RoleActions;
+import com.chevyl.commons.users.models.relationships.RoleActions;
 
 public class RoleActionModels {
     private List<RoleActions> entities;

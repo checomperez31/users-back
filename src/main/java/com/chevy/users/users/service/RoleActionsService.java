@@ -2,8 +2,8 @@ package com.chevy.users.users.service;
 
 import java.util.Optional;
 
-import com.chevy.users.users.models.relationships.RoleActions;
-import com.chevy.users.users.models.relationships.RoleActionsPK;
+import com.chevyl.commons.users.models.relationships.RoleActions;
+import com.chevyl.commons.users.models.relationships.RoleActionsPK;
 import com.chevy.users.users.repositories.RoleActionsRepository;
 import com.chevy.users.users.service.dto.RoleActionModels;
 

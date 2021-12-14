@@ -3,7 +3,7 @@ package com.chevy.users.users.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.chevy.users.users.models.Role;
+import com.chevyl.commons.users.models.Role;
 import com.chevy.users.users.repositories.RoleRepository;
 
 import org.springframework.http.HttpStatus;

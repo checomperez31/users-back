@@ -2,7 +2,7 @@ package com.chevy.users.users.web;
 
 import java.util.List;
 
-import com.chevy.users.users.models.Action;
+import com.chevyl.commons.users.models.Action;
 import com.chevy.users.users.service.ActionService;
 
 import org.springframework.http.HttpStatus;
